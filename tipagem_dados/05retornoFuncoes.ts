@@ -145,7 +145,22 @@ function processarPagamento(valor: number): "aprovado" | "recusado" | "pendente"
 const statusPagamento = processarPagamento(500); // "aprovado"
 
 
+// Type Guards - Trabalhando com Union Types
 
+function buscarDados(id: number): string | number {
+    return id > 0 ? "Dados encontrado" : 404;
+}
 
+const resultadoBusca = buscarDados(1);
+
+// Type guard com typeof
+
+if(typeof resultadoBusca === "string") {
+    console.log(resultadoBusca.toUpperCase());
+} else {
+    console.log(resultadoBusca * 2);
+}
+
+ 
 
 
