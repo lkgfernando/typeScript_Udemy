@@ -26,4 +26,6 @@ function soma(a: number, b: number): number {
 
 const soma2: (x: number, y: number) => number = (x, y) => x + y;
 
+console.log('Hello Word!!')
+
 
